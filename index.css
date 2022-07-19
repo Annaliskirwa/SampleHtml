@@ -53,3 +53,14 @@ p{
 .image{
     margin-left: 80%;
 } */
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large
+   
+}
+.image{
+    padding: 20px;
+}
