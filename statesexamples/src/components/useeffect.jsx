@@ -12,7 +12,7 @@ function EffectExample(){
             // console.log(response.data);
             console.log("Calling the api how many times")
         })
-    })
+    },[])
     return (
         <div>
             <p>Hello worrrlllddd {data}</p>
