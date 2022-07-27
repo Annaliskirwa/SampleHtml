@@ -3,13 +3,15 @@ import './App.css';
 
 import StateExample from './components/usestate';
 import StateTutorial from './components/usestate1';
+import ReducerExample from './components/usereducer';
 
 function App() {
   return (
     <div className="App">
       <h1>Examples</h1>
       {/* <StateExample/> */}
-      <StateTutorial/>
+      {/* <StateTutorial/> */}
+      <ReducerExample/>
     </div>
   );
 }
