@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
 const ReducerExample = ()=>{
-    const[count, setCount ]= useState(0);
-    const[showText, setShowText]= useState(true);
-
+    const [state, dispatch] = useReducer(reducer, { count: 0, showText: true });
     return(
         <div>
             <h1>{count}</h1>
