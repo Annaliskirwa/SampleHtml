@@ -8,7 +8,8 @@ const StateExample = () =>{
         // counter = counter + 1;
         // console.log(counter);
 
-        setCounter(3);
+        // setCounter(3);
+        setCounter(counter + 1);
     }
     return (
         <div>
