@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useReducer } from "react";
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -15,11 +15,18 @@ const ReducerExample = ()=>{
     const [state, dispatch] = useReducer(reducer, { count: 0, showText: true });
     return(
         <div>
-            <h1>{count}</h1>
-            <button onClick = {()=>{setCount(count+1);
-            setShowText(!showText)}}> Click here</button>
-            {showText && <p>You will see this</p>}
-        </div>
+      <h1>{state.count}</h1>
+      <button
+        onClick={() => {
+          dispatch({ type: "INCREMENT" });
+          dispatch({ type: "toggleShowText" });
+        }}
+      >
+        Click Here
+      </button>
+
+      {state.showText && <p>This is a text</p>}
+    </div>
     )
 }
 export default ReducerExample;
