@@ -4,6 +4,7 @@ import './App.css';
 import StateExample from './components/usestate';
 import StateTutorial from './components/usestate1';
 import ReducerExample from './components/usereducer';
+import EffectExample from './components/useeffect';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <h1>Examples</h1>
       {/* <StateExample/> */}
       {/* <StateTutorial/> */}
-      <ReducerExample/>
+      {/* <ReducerExample/> */}
+      <EffectExample/>
     </div>
   );
 }
