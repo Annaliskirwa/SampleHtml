@@ -8,7 +8,7 @@ const StateTutorial = ()=>{
     }
     return(
         <div>
-            <input placeholder="Enter your name"></input>
+            <input placeholder="Enter your name" onChange={onChange}></input>
             <p>{inputValue}</p>
         </div>
     )
