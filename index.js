@@ -3,6 +3,9 @@ function add(){
    let name = "anna"
     let firstNum = parseInt(document.getElementById("number").value);
     let secondNum = parseInt(document.getElementById("number1").value);
+    let thirNum = firstNum + secondNum;
+
+    document.getElementById('answer').innerHTML = thirNum;
    console.log(typeof(firstNum))
 //    alert(firstNum + secondNum)
 
@@ -68,3 +71,37 @@ function stringManipulation(){
    console.log(word.toUpperCase());
    console.log(word.toLowerCase());
 }
+
+// Assignment using = 
+const number1 = parseInt(12);
+const number2 = parseInt(12)
+
+// check for equality
+// strict inequality
+console.log(number1 != number2);
+// strict equality checks hadi data types
+console.log(number1 === number2)
+console.log(typeof(number2));
+
+
+// and: both have to be true
+// if one is false: returns false
+
+ let a = 8;
+ let b = 13;
+ let c = 14
+
+ if (a > 10 && b > 10 && c > 10){
+   console.log("all numbers are greater than 10");
+ }else{
+   console.log("some number is less than 10")
+ }
+
+ if (a > 10 || b > 10 || c > 10){
+   console.log("majority greater");
+ }else{
+   console.log("minority less")
+ }
+
+
+
