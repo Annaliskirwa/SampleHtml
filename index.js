@@ -103,5 +103,29 @@ console.log(typeof(number2));
    console.log("minority less")
  }
 
+ function handleRequest() {
+   axios.post("url", {name: "data"}).then(function (response) {
+       console.log(response)
+       // do whatever you want if console is [object object] then stringify the response
+   })
+}
 
+function handleRequest() {
+   axios.get("https://jsonplaceholder.typicode.com/comments").then(function (response) {
+       console.log(response.data[0].body)
+       // do whatever you want if console is [object object] then stringify the response
+   })
+}
 
+// on page load
+// https://www.codegrepper.com/code-examples/javascript/javascript+call+function+on+page+load
+
+function displayOutput() {
+   axios.get("https://api.openbrewerydb.org/breweries").then(function (response) {
+       console.log(response.data)
+   let drink = response.data[19].name
+   document.getElementById('drink').innerHTML = drink;
+   let name = response.data[10].city + response.data[10].country + response.data[9].address
+   document.getElementById("city").innerHTML=name;
+})
+}
