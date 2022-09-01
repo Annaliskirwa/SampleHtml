@@ -129,3 +129,29 @@ function displayOutput() {
    document.getElementById("city").innerHTML=name;
 })
 }
+
+
+function displayResults(){
+   //  var score1 = prompt()
+   let score = parseInt(document.getElementById("marks").value);
+    console.log(score)
+    var output;
+   switch(true)
+   {
+     case (score < 100 && score > 80):
+       text = "A";
+       break;
+     case (score < 79 && score > 50):
+       text = "B";
+       break;
+     case (score < 49 && score > 30):
+       text = "C";
+       break;
+     case (score < 29 && score >0):
+       text = "E";
+     default:
+       console.log("invalid input");
+       break;
+   }
+   console.log(text);
+   // document.write(text)
