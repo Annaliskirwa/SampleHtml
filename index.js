@@ -155,3 +155,15 @@ function displayResults(){
    }
    console.log(text);
    // document.write(text)
+
+
+// Arrow functions
+
+let addTwoNumbers=(a,b)=>{
+   let c=a+b
+   let multiply= a*b
+     // return c
+     console.log(c)
+     console.log(multiply)
+   }
+   // addTwoNumbers(a,b)
