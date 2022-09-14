@@ -1,0 +1,8 @@
+Javacript callbacks:
+https://www.w3schools.com/js/js_callback.asp#:~:text=A%20callback%20is%20a%20function,after%20another%20function%20has%20finished
+
+Javascript parameters and arguments:
+https://www.w3schools.com/js/js_function_parameters.asp
+
+JavaScript return:
+https://www.w3schools.com/jsref/jsref_return.asp
