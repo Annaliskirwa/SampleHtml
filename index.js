@@ -68,3 +68,12 @@ function stringManipulation(){
    console.log(word.toUpperCase());
    console.log(word.toLowerCase());
 }
+
+// Arrays ina Js
+const teams = ["arsenal", "manU", "chelsea", "totenham"]
+teams.length;
+// teams[0]
+// teams[teams.length -1]
+console.log(teams.length)
+console.log(teams[0])
+console.log(teams[teams.length -1])
